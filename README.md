@@ -1,5 +1,7 @@
 # sit323_737-2024-t1-prac2p
 
+A simple webpage application using ExpressJS. This project is done as requirement for Task 2.1P
+
 ## Environment vars
 This project uses the following environment variables:
 
