@@ -1,8 +1,8 @@
 // Import express library
-import express from 'express'
+const express = require('express')
 
 // Import config file
-import { PORT } from './config.js'
+const config = require('./config')
 
 // Initiate express instance
 const app = express()
@@ -17,8 +17,8 @@ app.use('*', (_, res) => {
 })
 
 // Run express app
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}!`)
+app.listen(config.PORT, () => {
+  console.log(`App listening on port ${config.PORT}!`)
 })
 
-export default app
+module.exports = app

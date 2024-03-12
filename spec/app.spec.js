@@ -1,7 +1,8 @@
-import request from 'supertest'
-import app from '../src/app.js'
-import jasmineReporters from 'jasmine-reporters'
+const request = require('supertest')
+const app = require('../src/app')
+const jasmineReporters = require('jasmine-reporters')
 
+// Configuration to display test result in terminal
 jasmine.getEnv().addReporter(new jasmineReporters.TerminalReporter({
   verbosity: 3,
   color: true,
